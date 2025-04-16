@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fábrica de Projetos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="fixed top-0 left-0 w-full bg-sky-500/20 px-6 py-4 z-50">
+        <div class="flex justify-between items-center">
+            <img class="h-10" src="./assets/imgs/logo.png" alt="Logo">
+            <div class="space-x-4">
+                <a href="#disciplina" class="hover:bg-gray-700 px-3 py-2">Disciplina</a>
+                <a href="#empresa" class="hover:bg-gray-700 px-3 py-2">Empresa</a>
+                <a href="#projeto" class="hover:bg-gray-700 px-3 py-2">Projeto</a>
+                <a href="#membros" class="hover:bg-gray-700 px-3 py-2">Grupo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fundo com partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Conteúdo -->
+    <main>
+        <section id="disciplina" class="mb-6">
+            <h2 class="text-xl font-semibold">Sobre a Disciplina</h2>
+            <p>A disciplina de Fábrica de Projetos proporciona uma experiência prática de desenvolvimento de software.
+            </p>
+        </section>
+
+
+
+        <section id="empresa" class="mb-6">
+            <h2 class="text-xl font-semibold">Sobre a Empresa</h2>
+            <p>A empresa oferece soluções inovadoras no mercado de tecnologia, focando na melhoria de processos e
+                experiência do usuário.</p>
+        </section>
+
+        <section id="projeto" class="mb-6 py-8 mt-6 text-center">
+            <div class="max-w-7xl mx-auto px-4">
+                <h1 class="text-2xl md:text-5xl font-bold mt-10 md:mt-20 mb-5 md:mb-10 text-center md:text-left">
+                    Projeto
+                </h1>
+            </div>
+            <div id="controls-carousel" class="relative w-full" data-carousel="static">
+
+                <div class="relative max-w-7xl min-h-[800px] mx-auto overflow-hidden rounded-lg">
+                    <div class="duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="./assets/imgs/1.png" class="mx-auto w-full h-auto object-contain">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/2.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/3.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/4.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/5.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/6.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/7.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/8.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/9.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                </div>
+
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white transition-all duration-300 hover:bg-blue-600"
+                        aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 8" data-carousel-slide-to="7"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 9" data-carousel-slide-to="8"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 10" data-carousel-slide-to="9"></button>
+                </div>
+
+
+                <!-- Botão Anterior -->
+                <button type="button"
+                    class="absolute top-1/2 left-4 z-30 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-white/20 backdrop-blur-md shadow-lg hover:bg-white/40 transition duration-300"
+                    data-carousel-prev>
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Anterior</span>
+                </button>
+
+                <!-- Botão Próximo -->
+                <button type="button"
+                    class="absolute top-1/2 right-4 z-30 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-white/20 backdrop-blur-md shadow-lg hover:bg-white/40 transition duration-300"
+                    data-carousel-next>
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Próximo</span>
+                </button>
+
+            </div>
+        </section>
+
+
+
+        <section id="membros" class="mb-6">
+            <h2 class="text-xl font-semibold">Membros do Grupo</h2>
+            <p>Membro 1: Backend e integração de APIs.</p>
+            <p>Membro 2: Design e experiência do usuário.</p>
+            <p>Membro 3: Gestão e coordenação do projeto.</p>
+        </section>
+    </main>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

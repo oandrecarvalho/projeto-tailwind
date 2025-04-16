@@ -1,0 +1,55 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Fundo com partículas */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #000;
+    pointer-events: auto;
+}
+
+/* Conteúdo sobre as partículas */
+main,
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+main section {
+    min-height: 100vh;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Seções alternadas com leve fundo */
+main section:nth-child(even) {
+    /* even = pares */
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#janela-modal.abrir {
+    display: flex;
+}
+
+#projeto {
+    min-height: 50px;
+    /* Ajuste conforme necessário */
+}
