@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fábrica de Projetos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="fixed top-0 left-0 w-full bg-sky-500/20 px-6 py-4 z-50">
+        <div class="flex justify-between items-center">
+            <img class="h-10" src="./assets/imgs/logo.png" alt="Logo">
+            <div class="hidden lg:flex space-x-4">
+                <a href="#disciplina" class="hover:bg-gray-700 px-3 py-2">Disciplina</a>
+                <a href="#empresa" class="hover:bg-gray-700 px-3 py-2">Empresa</a>
+                <a href="#projeto" class="hover:bg-gray-700 px-3 py-2">Projeto</a>
+                <a href="#membros" class="hover:bg-gray-700 px-3 py-2">Grupo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fundo com partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Conteúdo -->
+    <main>
+        <section id="disciplina" class="mb-3">
+            <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 ml-20">
+                <img src="./assets/imgs/disciplina.png" alt="foto disciplina"
+                    class="w-full md:w-[35%] h-auto rounded-lg hover:scale-105 transition-transform opacity-80 md:ml-10 mt-20"
+                    id="img">
+                <div class="flex-1 px-4 max-w-[800px] mx-auto">
+                    <h1 class="text-3xl md:text-5xl font-bold mt-10 md:mt-20 mb-10 md:mb-20 text-center md:text-left">
+                        Fábrica de Projetos Ágeis
+                    </h1>
+                    <p class="text-justify text-base md:text-lg mt-6 md:mt-8">
+                        A disciplina Fábrica de Projetos Ágeis, oferecida pela Unimar nos cursos de Ciência da
+                        Computação e Análise e Desenvolvimento de Sistemas, tem um papel fundamental na nossa formação.
+                        Ela se destaca por integrar, em um único projeto prático, todo o conteúdo aprendido nas demais
+                        disciplinas do semestre, proporcionando uma visão mais completa e aplicada do que estudamos.
+                        <br>
+                        De acordo com o coordenador de tecnologia, Prof. Dr. Caio Saraiva Coneglian, "a disciplina
+                        proporciona aos alunos uma experiência única, combinando teoria e prática de maneira inovadora".
+                        E realmente é isso que vivemos: trabalhamos com projetos reais, em parceria com empresas da
+                        região, o que nos desafia a aplicar nossos conhecimentos em problemas concretos do mercado.
+                        <br>
+                        Essa vivência contribui muito para o nosso desenvolvimento profissional, nos preparando de forma
+                        prática e eficiente para os desafios da área de tecnologia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="empresa" class="mb-6">
+            <h2 class="text-xl font-semibold">Sobre a Empresa</h2>
+            <p>A empresa oferece soluções inovadoras no mercado de tecnologia, focando na melhoria de processos e
+                experiência do usuário.</p>
+        </section>
+
+        <section id="projeto" class="mb-6">
+            <h2 class="text-xl font-semibold">Sobre o Projeto</h2>
+            <p>O projeto é uma plataforma de gerenciamento de tarefas para otimizar o tempo e produtividade dos
+                usuários.</p>
+        </section>
+
+        <section id="membros" class="mb-6">
+            <h2 class="text-xl font-semibold">Membros do Grupo</h2>
+            <p>Membro 1: Backend e integração de APIs.</p>
+            <p>Membro 2: Design e experiência do usuário.</p>
+            <p>Membro 3: Gestão e coordenação do projeto.</p>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
