@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fábrica de Projetos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="fixed top-0 left-0 w-full bg-sky-500/20 px-6 py-4 z-50">
+        <div class="flex justify-between items-center">
+            <img class="h-10" src="./assets/imgs/logo.png" alt="Logo">
+
+            <button id="menu-btn" class="lg:hidden text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <div class="hidden lg:flex space-x-4">
+                <a href="#disciplina" class="hover:text-black px-3 py-2">Disciplina</a>
+                <a href="#empresa" class="hover:text-black px-3 py-2">Empresa</a>
+                <a href="#projeto" class="hover:text-black px-3 py-2">Projeto</a>
+                <a href="#membros" class="hover:text-black px-3 py-2">Grupo</a>
+            </div>
+        </div>
+
+        <div id="menu-mobile" class="hidden flex-col mt-2 space-y-2 lg:hidden">
+            <a href="#disciplina" class="block hover:text-black px-3 py-2">Disciplina</a>
+            <a href="#empresa" class="block hover:text-black px-3 py-2">Empresa</a>
+            <a href="#projeto" class="block hover:text-black px-3 py-2">Projeto</a>
+            <a href="#membros" class="block hover:text-black px-3 py-2">Grupo</a>
+        </div>
+    </nav>
+
+    <div id="particles-js"></div>
+
+    <main>
+        <section id="disciplina" class="mb-3">
+            <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 ml-20">
+                <img src="./assets/imgs/disciplina.png" alt="imagem disciplina"
+                    class="w-full md:w-[35%] h-auto rounded-lg hover:scale-105 transition-transform opacity-80 md:ml-10 mt-20"
+                    id="img">
+                <div class="flex-1 px-4 max-w-[800px] mx-auto">
+                    <h1 class="text-3xl md:text-5xl font-bold mt-10 md:mt-20 mb-10 md:mb-20 text-center md:text-left">
+                        Fábrica de Projetos Ágeis
+                    </h1>
+                    <p class="text-justify text-base md:text-2xl mt-6 md:mt-8">
+                        A disciplina Fábrica de Projetos Ágeis, oferecida pela Unimar nos cursos de Ciência da
+                        Computação e Análise e Desenvolvimento de Sistemas, tem um papel fundamental na nossa formação.
+                        Ela se destaca por integrar, em um único projeto prático, todo o conteúdo aprendido nas demais
+                        disciplinas do semestre, proporcionando uma visão mais completa e aplicada do que estudamos.
+                        <br>
+                        De acordo com o coordenador de tecnologia, Prof. Dr. Caio Saraiva Coneglian, "a disciplina
+                        proporciona aos alunos uma experiência única, combinando teoria e prática de maneira inovadora".
+                        E realmente é isso que vivemos: trabalhamos com projetos reais, em parceria com empresas da
+                        região, o que nos desafia a aplicar nossos conhecimentos em problemas concretos do mercado.
+                        <br>
+                        Essa vivência contribui muito para o nosso desenvolvimento profissional, nos preparando de forma
+                        prática e eficiente para os desafios da área de tecnologia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="empresa" class="mb-6 px-4">
+            <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 ml-20">
+                <div class="w-full md:w-[55%]">
+                    <h1 class="text-3xl md:text-5xl font-bold text-center md:text-left mb-6">
+                        Fábrica de Códigos
+                    </h1>
+                    <p class="text-justify text-base md:text-2xl mt-6 md:mt-8">
+                        A Fábrica de Códigos nasceu em 2009, em Natal (RN), da vontade de um grupo de jovens
+                        apaixonados por tecnologia de criar soluções digitais que realmente fizessem a diferença.
+                        O que começou como uma pequena equipe desenvolvendo sistemas sob medida para empresas locais
+                        logo ganhou força com a combinação de competência técnica, agilidade na entrega e um atendimento
+                        próximo e transparente.
+                        <br>
+                        Com o tempo, a empresa cresceu, expandiu sua atuação para todo o Brasil e passou a atender
+                        projetos de diversos setores, sempre com foco em inovação, design eficiente e soluções sob
+                        medida.
+                        Hoje, a Fábrica de Códigos é muito mais do que uma empresa de software: é uma parceira
+                        estratégica
+                        na transformação digital de negócios.
+                        <br>
+                        Com uma equipe distribuída, cultura colaborativa e sede em Natal, a empresa mantém seus valores
+                        de origem — proximidade, agilidade e compromisso com a qualidade — enquanto continua evoluindo
+                        e entregando projetos que conectam tecnologia e propósito.
+                    </p>
+                </div>
+                <div class="w-full md:w-[45%]">
+                    <img src="./assets/imgs/fc.png" alt="Imagem da Empresa"
+                        class="w-full md:w-[80%] h-auto rounded-lg hover:scale-105 transition-transform opacity-90 md:ml-10 mt-20">
+                </div>
+            </div>
+        </section>
+
+        <section id="projeto" class="mb-6 py-8 mt-6 text-center">
+            <div class="max-w-7xl mx-auto px-4">
+                <h1 class="text-2xl md:text-5xl font-bold mt-10 md:mt-20 mb-5 md:mb-10 text-center md:text-left">
+                    Projeto
+                </h1>
+            </div>
+            <div id="controls-carousel" class="relative w-full" data-carousel="static">
+
+                <div class="relative max-w-7xl min-h-[800px] mx-auto overflow-hidden rounded-lg">
+                    <div class="duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="./assets/imgs/1.png" class="mx-auto w-full h-auto object-contain">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/2.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/3.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/4.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/5.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/6.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/7.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/8.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/imgs/9.png" class="mx-auto w-full h-auto object-contain opacity-90">
+                    </div>
+                </div>
+
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white transition-all duration-300 hover:bg-blue-600"
+                        aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 8" data-carousel-slide-to="7"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 9" data-carousel-slide-to="8"></button>
+                    <button type="button"
+                        class="w-4 h-4 rounded-full bg-white/50 transition-all duration-300 hover:bg-blue-600"
+                        aria-current="false" aria-label="Slide 10" data-carousel-slide-to="9"></button>
+                </div>
+
+
+                <!-- Botão Anterior -->
+                <button type="button"
+                    class="absolute top-1/2 left-4 z-30 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-white/20 backdrop-blur-md shadow-lg hover:bg-white/40 transition duration-300"
+                    data-carousel-prev>
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Anterior</span>
+                </button>
+
+                <!-- Botão Próximo -->
+                <button type="button"
+                    class="absolute top-1/2 right-4 z-30 -translate-y-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-white/20 backdrop-blur-md shadow-lg hover:bg-white/40 transition duration-300"
+                    data-carousel-next>
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Próximo</span>
+                </button>
+
+            </div>
+        </section>
+
+        <section id="membros" class="mb-10 px-6">
+            <h2 class="text-5xl font-bold mb-40 font-sans text-gray-100 text-center">Membros do Grupo</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center font-sans text-gray-50">
+                <!-- André -->
+                <div id="andre" class="group mb-40 ">
+                    <img onclick="abrirModal('modal-andre')"
+                        class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg transform transition duration-[700ms] ease-in-out group-hover:-translate-y-3"
+                        src="./assets/imgs/Andre.png" alt="Foto André">
+                    <h3 class="mt-3 font-medium text-3xl mb-3">André Luís</h3>
+                    <p class="text-xl">Backend, Integração de APIs, <br> Frontend</p>
+                    <div id="modal-andre"
+                        class="fixed inset-0 w-screen h-screen bg-black bg-opacity-70 flex items-center justify-center z-[1000] hidden">
+                        <div
+                            class="modal w-[500px] h-[350px] min-w-[450px] min-h-[200px] backdrop-blur-lg bg-gray-800 rounded-lg relative p-6 max-w-md mx-auto">
+                            <button data-close-modal class="absolute top-2 right-3"><i
+                                    class="fa fa-close text-3xl text-red-500 hover:text-red-600"></i>
+                            </button>
+                            <img class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg mt-2"
+                                src="./assets/imgs/Andre.png" alt="Foto André">
+                            <h1 class="pt-4 text-xl font-bold text-center">André Luís dos Santos Carvalho</h1>
+                            <p class="text-sm mt-2 text-center">Backend, Integração de APIs e auxilia no
+                                Frontend quando necessário.</p>
+                            <h2 class="pt-4 text-lg font-bold text-center">Ferramentas e Tecnologias:</h2>
+                            <p class="text-sm mt-2 text-center">
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                    class="w-6 h-6" alt="VSCode" title="VSCode" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    class="w-6 h-6" alt="HTML" title="HTML5" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    class="w-6 h-6" alt="CSS" title="CSS3" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    class="w-6 h-6" alt="JavaScript" title="JavaScript" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    class="w-6 h-6" alt="Python" title="Python" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                    class="w-6 h-6" alt="C#" title="C#" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                    class="w-6 h-6" alt="Figma" title="Figma" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                    height="40" alt="git logo" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luiz -->
+                <div id="luiz" class="group">
+                    <img onclick="abrirModal('modal-luiz')"
+                        class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg transform transition duration-[700ms] ease-in-out group-hover:-translate-y-3"
+                        src="./assets/imgs/Luiz.png" alt="Foto Luiz">
+                    <h3 class="mt-3 font-medium text-3xl mb-3">Luiz Henrique</h3>
+                    <p class="text-xl">Idealizador, Backend, <br> APIs, Doc. Técnica</p>
+                    <div id="modal-luiz"
+                        class="fixed inset-0 w-screen h-screen bg-black bg-opacity-70 flex items-center justify-center z-[1000] hidden">
+                        <div
+                            class="modal w-[500px] h-[350px] min-w-[450px] min-h-[200px] backdrop-blur-lg bg-gray-800 rounded-lg relative p-6 mx-auto relative p-6 max-w-md mx-auto">
+                            <button data-close-modal class="absolute top-2 right-3"><i
+                                    class="fa fa-close text-3xl text-red-500 hover:text-red-600"></i></button>
+                            <img class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg mt-2"
+                                src="./assets/imgs/Luiz.png" alt="Foto Luiz">
+                            <h1 class="pt-4 text-xl font-bold text-center">Luiz Henrique</h1>
+                            <p class="text-sm mt-2 text-center">Responsável por integrações e serviços no backend.</p>
+                            <h2 class="pt-4 text-lg font-bold text-center">Ferramentas e Tecnologias:</h2>
+                            <p class="text-sm mt-2 text-center">
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                    class="w-6 h-6" alt="VSCode" title="VSCode" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    class="w-6 h-6" alt="JavaScript" title="JavaScript" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                    class="w-6 h-6" alt="C#" title="C#" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    class="w-6 h-6" alt="Python" title="Python" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                    height="40" alt="git logo" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+                                    height="40" alt="trello logo" />
+                                <img class="size-7 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.brandfetch.io/idrRDmZ2_F/w/180/h/180/theme/light/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
+                                    height="40" alt="trello logo" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Francine -->
+                <div id="francine" class="group">
+                    <img onclick="abrirModal('modal-fran')"
+                        class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg transform transition duration-[700ms] ease-in-out group-hover:-translate-y-3"
+                        src="./assets/imgs/Fran.png" alt="Foto Fran">
+                    <h3 class="mt-3 font-medium text-3xl mb-3">Francine Sevilha</h3>
+                    <p class="text-xl">Gestão de Projeto,<br> Documentação</p>
+                    <div id="modal-fran"
+                        class="fixed inset-0 w-screen h-screen bg-black bg-opacity-70 flex items-center justify-center z-[1000] hidden">
+                        <div
+                            class="modal w-[500px] h-[350px] min-w-[450px] min-h-[200px] backdrop-blur-lg bg-gray-800 rounded-lg relative p-6 mx-auto relative p-6 max-w-md mx-auto">
+                            <button data-close-modal class="absolute top-2 right-3"><i
+                                    class="fa fa-close text-3xl text-red-500 hover:text-red-600"></i></button>
+                            <img class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg mt-2"
+                                src="./assets/imgs/Fran.png" alt="Foto Fran">
+                            <h1 class="pt-4 text-xl font-bold text-center">Francine Sevilha</h1>
+                            <p class="text-sm mt-2 text-center">Responsavel pela organização,<br> e
+                                documentação do projeto.</p>
+                            <h2 class="pt-4 text-lg font-bold text-center">Ferramentas e Tecnologias:</h2>
+                            <p class="text-sm mt-2 text-center">
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+                                    height="40" alt="trello logo" />
+                                <img class="size-7 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"
+                                    height="40" alt="canva" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gabriel -->
+                <div id="gabriel" class="group">
+                    <img onclick="abrirModal('modal-tanabe')"
+                        class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg transform transition duration-[700ms] ease-in-out group-hover:-translate-y-3"
+                        src="./assets/imgs/Tanabe.png" alt="Foto Tanabe">
+                    <h3 class="mt-3 font-medium text-3xl mb-3">Gabriel Tanabe</h3>
+                    <p class="text-xl">Frontend, UX</p>
+                    <div id="modal-tanabe"
+                        class="fixed inset-0 w-screen h-screen bg-black bg-opacity-70 flex items-center justify-center z-[1000] hidden">
+                        <div
+                            class="modal w-[500px] h-[350px] min-w-[450px] min-h-[200px] backdrop-blur-lg bg-gray-800 rounded-lg relative p-6 mx-auto relative p-6 max-w-md mx-auto">
+                            <button data-close-modal class="absolute top-2 right-3"><i
+                                    class="fa fa-close text-3xl text-red-500 hover:text-red-600"></i></button>
+                            <img class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg mt-2"
+                                src="./assets/imgs/Tanabe.png" alt="Foto Tanabe">
+                            <h1 class="pt-4 text-xl font-bold text-center">Gabriel Tanabe</h1>
+                            <p class="text-sm mt-2 text-center">Responsável pelo frontend e experiência do usuário.</p>
+                            <h2 class="pt-4 text-lg font-bold text-center">Ferramentas e Tecnologias:</h2>
+                            <p class="text-sm mt-2 text-center">
+                                <img class="size-6 inline justify-center gap-4 mt-2
+                                    flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                    class="w-6 h-6" alt="VSCode" title="VSCode" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    class="w-6 h-6" alt="HTML" title="HTML5" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    class="w-6 h-6" alt="CSS" title="CSS3" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    class="w-6 h-6" alt="JavaScript" title="JavaScript" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                    class="w-6 h-6" alt="Figma" title="Figma" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pedro -->
+                <div id="pedro" class="group">
+                    <img onclick="abrirModal('modal-pedro')"
+                        class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg transform transition duration-[700ms] ease-in-out group-hover:-translate-y-3"
+                        src="./assets/imgs/Pedro.png" alt="Foto Pedro">
+                    <h3 class="mt-3 font-medium text-3xl mb-3">Pedro Gabriel</h3>
+                    <p class="text-xl">Design, UX</p>
+                    <div id="modal-pedro"
+                        class="fixed inset-0 w-screen h-screen bg-black bg-opacity-70 flex items-center justify-center z-[1000] hidden">
+                        <div
+                            class="modal w-[500px] h-[350px] min-w-[450px] min-h-[200px] backdrop-blur-lg bg-gray-800 rounded-lg relative p-6 mx-autorelative p-6 max-w-md mx-auto">
+                            <button data-close-modal class="absolute top-2 right-3"><i
+                                    class="fa fa-close text-3xl text-red-500 hover:text-red-600"></i></button>
+                            <img class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg mt-2"
+                                src="./assets/imgs/Pedro.png" alt="Foto Pedro">
+                            <h1 class="pt-4 text-xl font-bold text-center">Pedro Gabriel</h1>
+                            <p class="text-sm mt-2 text-center">Cuida da identidade visual e experiência de navegação.
+                            </p>
+                            <h2 class="pt-4 text-lg font-bold text-center">Ferramentas e Tecnologias:</h2>
+                            <p class="text-sm mt-2 text-center">
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                    alt="VSCode" title="VSCode" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML" title="HTML5" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS" title="CSS3" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript" title="JavaScript" />
+                                <img class="size-6 inline justify-center gap-4 mt-2 flex-wrap"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                    alt="Figma" title="Figma" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gepeto -->
+                <div id="gpt" class="group">
+                    <img onclick="abrirModal('modal-gepeto')"
+                        class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg transform transition duration-[700ms] ease-in-out group-hover:-translate-y-3"
+                        src="./assets/imgs/ChatGPT.png" alt="Foto GPT">
+                    <h3 class="mt-3 font-medium text-3xl mb-3">ChatGPT</h3>
+                    <p class="text-xl">Conselheiro</p>
+                    <div id="modal-gepeto"
+                        class="fixed inset-0 w-screen h-screen bg-black bg-opacity-70 flex items-center justify-center z-[1000] hidden">
+                        <div
+                            class="modal w-[500px] h-[350px] min-w-[450px] min-h-[200px] backdrop-blur-lg bg-gray-800 rounded-lg relative p-6 mx-auto relative p-6 max-w-md mx-auto">
+                            <button data-close-modal class="absolute top-2 right-3"><i
+                                    class="fa fa-close text-3xl text-red-500 hover:text-red-600"></i></button>
+                            <img class="w-32 h-32 mx-auto rounded-full object-cover shadow-lg mt-2"
+                                src="./assets/imgs/ChatGPT.png" alt="Foto GPT">
+                            <h1 class="pt-4 text-xl font-bold text-center">Gepeto</h1>
+                            <p class="text-sm mt-2 text-center">A mente criativa que acompanha e apoia o grupo em cada
+                                desafio.</p>
+                            <img class="size-10 inline justify-center gap-4 mt-2 flex-wrap mt-5"
+                                src="https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=ffffff"
+                                alt="Icone GPT">
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10 mt-0 opacity-90">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Seção de informações da Universidade -->
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <h2 class="text-lg font-semibold">Universidade de Marília - UNIMAR</h2>
+                <p class="text-sm opacity-75">ADS Turma A <br>3° Termo • 2025</p>
+            </div>
+
+            <!-- Direitos autorais -->
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                © 2025 <a href="#projeto" class="hover:underline">DuvidAI</a>. Todos os Direitos
+                Reservados.
+            </span>
+
+            <!-- Ícones sociais -->
+            <div class="flex space-x-6 items-center text-4xl mt-6 md:mt-0" id="icon">
+                <a href="https://github.com/lorocks51987" target="_blank" class="hover:text-gray-400 transition">
+                    <i class="devicon-github-original"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+
+</html>
